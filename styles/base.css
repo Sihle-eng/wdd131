@@ -34,6 +34,7 @@ main {
     grid-template-rows: auto 1fr;
     gap: 1rem;
     padding: 1rem;
+    max-width: 1300px;
 }
 h2 {
     display: grid;
