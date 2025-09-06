@@ -14,6 +14,9 @@ header span {
     height: 50px;
     border-radius: 8px;
 }
+nav a:hover {
+    text-decoration: underline;
+}
 nav ol {
     /* display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px,1fr)); */
