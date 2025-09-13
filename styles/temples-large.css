@@ -1,0 +1,10 @@
+@media screen and (min-width: 750px) {
+    .page-wrapper {
+        max-width: 800px;
+    }
+    main {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    
+}
