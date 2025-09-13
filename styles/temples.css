@@ -1,3 +1,9 @@
+:root {
+    --border-radius: 8px;
+}
+
+
+
 .open-sans-custom {
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
@@ -14,7 +20,7 @@ header {
     position: relative;
     text-align: center;
     background-color: bisque;
-    border-radius: 8px;
+    border-radius: var(--border-radius);
 }
 nav {
     background: lightblue;
@@ -32,7 +38,7 @@ main {
     max-width: 800px;
     margin: 0 auto;
     background: lightcoral;
-    border-radius: 8px;
+    border-radius: var(--border-radius);
 }
 main h1 {
     grid-column: 1/-1;
@@ -41,7 +47,7 @@ main h1 {
     margin: 0;
     padding: 1rem 0;
     background: lightseagreen;
-    border-radius: 8px;
+    border-radius: var(--border-radius);
 }
 figure {
     display: flex;
@@ -73,7 +79,7 @@ figure img {
 #navMenu.open {
     display: flex;
     justify-content: center;
-    border-radius: 8px;
+    border-radius: var(--border-radius);
 }
 #navMenu ol {
     display: flex;
