@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Country Page - Durban, South Africa</title>
+    <meta name="description" content="Creating a country page where I live, have visited, or wished I have visted.">
+    <meta name="author" content="Sihlelelweyinkhosi Welcome Mchobokazi">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <h2 class="weather-heading">Weather ☁️<img src="images/sun-cloud-icon.svg" alt="Weather Icon" width="30" height="30" class="weather-heading"</h2>
+        <div class="hero">
+            <picture>
+                <source srcset="images/south-africa-durban-large.webp" media="min-width: 1000px">
+                <source srcset="images/south-africa-durban-medium.webp" media="min-width: 550px">
+                <img src="images/south-africa-durban-small.webp" alt="South Africa Durban" width="500" height="250">
+            </picture>
+        </div>
+        <div id="windchill">Loading wind chill data....</div>
+    </main>
+    <footer>
+        <p>
+            <span id="currentYear"></span>
+        </p>
+        <p>
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+</body>
+
+</html>
