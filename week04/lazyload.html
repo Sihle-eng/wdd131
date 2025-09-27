@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description"
+        content="Build a small webpage with multiple images stacked vertically on a single page. When testing the page in a browser, the images will load only when they come into view as teh user scrolls. This effect is subtle, so carefully scroll and view the network tab loading information in Devtools to observe the behavior">
+    <meta name="author" content="Sihlelelweyinkhosi Welcome Mchobokazi">
+    <link rel="stylesheet" href="styles/lazyload.css">
+    <script src="script/lazyload.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <img src="https://picsum.photos/400/600?random=1" alt="a random image" loading="lazy">
+        <img src="https://picsum.photos/400/600?random=2" alt="a random image" loading="lazy">
+        <img src="https://picsum.photos/400/600?random=3" alt="a random image" loading="lazy">
+        <img src="https://picsum.photos/400/600?random=4" alt="a random image" loading="lazy">
+        <img src="https://picsum.photos/400/600?random=5" alt="a random image" loading="lazy">
+        <img src="https://picsum.photos/400/600?random=6" alt="a random image" loading="lazy">
+
+    </main>
+    <footer>
+        <p>
+            <span id="currentYear"></span>
+        </p>
+        <p>
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+</body>
+
+</html>

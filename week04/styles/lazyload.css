@@ -1,0 +1,17 @@
+img {
+    display: block;
+}
+@keyframes fadefromback {
+    0% {
+        opacity: 0;
+        background-color: black;
+
+    }
+    100% {
+        opacity: 1;
+        background-color: aquamarine;
+    }
+}
+img {
+    animation: fadefromback 2s ease-in;
+}

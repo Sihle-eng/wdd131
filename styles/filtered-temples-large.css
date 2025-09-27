@@ -1,0 +1,25 @@
+#temple-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+
+
+@media screen and (min-width: 750px) {
+    /* .page-wrapper {
+        max-width: 800px;
+        margin: 0 auto;
+    } */
+    #temple-cards {
+        /* display: grid; */
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        /* gap: 1rem; */
+
+    }
+
+    
+}
+body {
+    background: lightyellow;
+}
