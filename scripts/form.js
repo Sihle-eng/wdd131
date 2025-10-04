@@ -28,14 +28,16 @@ const products = [
 ];
 const selectElement = document.getElementById("productSelector");
 
-products.forEach(product => {
-    const option = document.createElement("option");
-    option.value = product.id;
-    option.textContent = product.name;
-    option.textContent += ` (Average Rating: ${product.averagerating})`;
+if (selectElement) {
+    products.forEach(product => {
+        const option = document.createElement("option");
+        option.value = product.id;
+        option.textContent = product.name;
+        option.textContent += ` (Average Rating: ${product.averagerating})`;
 
-    selectElement.appendChild(option);
-});
+        selectElement.appendChild(option);
+    });
+}
 
 const reviewCountDisplay = document.getElementById("reviewCount");
 if (reviewCountDisplay) {
@@ -45,17 +47,6 @@ if (reviewCountDisplay) {
     reviewCountDisplay.textContent = count;
 }
 
-// const selectElemen = document.getElementById("productSelector");
-
-// if (selectElemen) {
-//     products.forEach(product => {
-//         const option = document.createElement("option");
-//         option.value = product.id;
-//         option.textContent = product.name;
-//         option.textContent += ` (Average Rating: ${product.averagerating})`;
-//         selectElemen.appendChild(option);
-//     });
-// }
 const currentYear = new Date().getFullYear();
 document.getElementById("currentYear").textContent = ` ©${currentYear} | ✌️ Sihlelelweyinkhosi Mchobokazi ✌️ | Eswatini`;
 
